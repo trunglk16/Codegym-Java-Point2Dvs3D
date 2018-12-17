@@ -4,7 +4,6 @@ public class Point2D {
     float x = 0.0f;
     float y = 0.0f;
 
-
     public Point2D() {
     }
 
@@ -35,14 +34,12 @@ public class Point2D {
     }
 
     public float[] getXY(){
-        float[] arr = new float[2];
-        arr[0] = getX();
-        arr[1] = getY();
-        System.out.println(Arrays.toString(arr));
-
-        return arr;
+        float[] arrayXY = new float[2];
+        arrayXY[0] = getX();
+        arrayXY[1] = getY();
+        System.out.println(Arrays.toString(arrayXY));
+        return arrayXY;
     }
-
 
     public String toString() {
        return Arrays.toString(getXY());
